@@ -1,0 +1,122 @@
+.accent-circle {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.1;
+  z-index: 0;
+}
+
+.accent-circle-1 {
+  width: 300px;
+  height: 300px;
+  background: var(--accent-color);
+  top: -150px;
+  left: -150px;
+}
+
+.accent-circle-2 {
+  width: 200px;
+  height: 200px;
+  background: var(--secondary-color);
+  bottom: -100px;
+  right: -100px;
+}
+
+.accent-dot-grid {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  width: 120px;
+  height: 120px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  opacity: 0.2;
+  z-index: 0;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+}
+
+.section-divider {
+  height: 4px;
+  width: 60px;
+  margin: 2rem auto;
+  background: linear-gradient(to right, var(--secondary-color), var(--accent-color));
+  border-radius: 2px;
+}
+
+.highlight {
+  color: var(--accent-color);
+  font-weight: 500;
+}
+
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background-color: var(--light-bg);
+  border-radius: 4px;
+  margin-top: 5px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  border-radius: 4px;
+  background: linear-gradient(to right, var(--secondary-color), var(--accent-color));
+  animation: growProgress 1.5s ease-out forwards;
+  transform-origin: left;
+  transform: scaleX(0);
+}
+
+@keyframes growProgress {
+  to { transform: scaleX(1); }
+}
+
+.floating {
+  animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.5rem;
+  animation: bounce 2s infinite;
+  color: white;
+  cursor: pointer;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0) translateX(-50%); }
+  40% { transform: translateY(-10px) translateX(-50%); }
+  60% { transform: translateY(-5px) translateX(-50%); }
+}
+
+.tag-container {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.corner-tag {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: var(--accent-color);
+  color: white;
+  font-size: 0.8rem;
+  padding: 3px 10px;
+  border-radius: 4px;
+  transform: rotate(3deg);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
