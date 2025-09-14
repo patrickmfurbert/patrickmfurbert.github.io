@@ -214,8 +214,7 @@
   <div class="section-divider"></div>
   
   <section id="community" class="animate-on-scroll">
-    <div class="tag-container">
-    </div>
+
     <h2>Community Service</h2>
     <div class="experience-item">
       <div class="job-title">
@@ -230,8 +229,7 @@
   <div class="section-divider"></div>
   
   <section id="publications" class="animate-on-scroll">
-    <div class="tag-container">
-    </div>
+
     <h2>Publications</h2>
     <p>
       Furbert, P., Lu, C., Winograd, N., & DeLouise, L. (2008). Label-free optical detection of peptide synthesis on a porous silicon scaffold/sensor. 
