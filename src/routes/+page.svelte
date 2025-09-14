@@ -88,9 +88,9 @@
       <ul>
         <li>Collaborate in an Agile team of 10 developers to update, test, and deploy applications/starter libraries in OpenShift environment</li>
         <li>Analyze and resolve defects/incidents while providing timely feedback to internal customers</li>
-        <li>Conduct research spikes on new libraries for Solution Leads to evaluate for application integration</li>
+        <li>Conduct research spikes on new libraries for Solution Lead to evaluate for integration</li>
         <li>Worked with team triangle for planning out work for team for multiple increments</li>
-        <li>Collaborated with solution lead and senior developer on application designs</li>
+        <li>Collaborated with Solution Lead and Senior Developer on application designs</li>
         <li>Participate in biweekly department standards meetings</li>
       </ul>
     </div>
@@ -215,7 +215,6 @@
   
   <section id="community" class="animate-on-scroll">
     <div class="tag-container">
-      <div class="corner-tag">2025</div>
     </div>
     <h2>Community Service</h2>
     <div class="experience-item">
@@ -232,7 +231,6 @@
   
   <section id="publications" class="animate-on-scroll">
     <div class="tag-container">
-      <div class="corner-tag">2008</div>
     </div>
     <h2>Publications</h2>
     <p>

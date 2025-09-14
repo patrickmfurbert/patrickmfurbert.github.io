@@ -1,11 +1,11 @@
 /* Global styles */
 :root {
   --primary-color: #2c3e50;
-  --secondary-color: #3498db;
-  --accent-color: #e74c3c;
+  --secondary-color: #58a3e9;
+  --accent-color: #03a9f4;
   --text-color: #333;
-  --light-bg: #f9f9f9;
-  --border-color: #ddd;
+  --light-bg: #f0f0f0;
+  --border-color: #ccc;
   --section-padding: 2rem;
   --transition: all 0.3s ease;
 }
@@ -127,7 +127,7 @@ hr {
   justify-content: center;
   font-size: 4rem;
   font-weight: bold;
-  background: linear-gradient(135deg, #3498db, #8e44ad);
+  background: linear-gradient(135deg, #1976d2, #0288d1);
   color: white;
   border: 5px solid white;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
@@ -143,7 +143,7 @@ hr {
   align-items: center;
   text-align: center;
   padding: 3.5rem 0;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #0277bd 0%, #01579b 100%);
   margin: -2rem -2rem 2rem -2rem;
   border-radius: 0 0 50% 50% / 20px;
   color: white;
@@ -279,15 +279,15 @@ ul {
 }
 
 .primary-skill {
-  background: linear-gradient(to right, #3498db, #2980b9);
+  background: linear-gradient(to right, #1976d2, #0d47a1);
 }
 
 .secondary-skill {
-  background: linear-gradient(to right, #9b59b6, #8e44ad);
+  background: linear-gradient(to right, #0288d1, #01579b);
 }
 
 .tool-skill {
-  background: linear-gradient(to right, #2ecc71, #27ae60);
+  background: linear-gradient(to right, #0097a7, #006064);
 }
 
 .skill-tag:hover {
