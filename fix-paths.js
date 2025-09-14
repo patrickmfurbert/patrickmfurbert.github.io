@@ -19,6 +19,9 @@ if (fs.existsSync(sourcePath)) {
     fs.writeFileSync(indexPath, indexContent);
     console.log('Updated index.html to reference app instead of _app');
   }
+
+  // Create .nojekyll file in build directory
+  fs.writeFileSync(path.resolve('build', '.nojekyll'), '');
 } else {
   console.error('Source directory does not exist:', sourcePath);
 }

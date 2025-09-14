@@ -2,6 +2,7 @@
 :root {
   --primary-color: #2c3e50;
   --secondary-color: #58a3e9;
+  --tertiary-color: #52bfe7;
   --accent-color: #03a9f4;
   --text-color: #333;
   --light-bg: #f0f0f0;
@@ -45,7 +46,7 @@ h2 {
 }
 
 a {
-  color: var(--secondary-color);
+  color: var(--tertiary-color);
   text-decoration: none;
   transition: var(--transition);
 }
