@@ -31,17 +31,25 @@
 </div>
 
 <div class="container fade-in">
+  <div class="accent-circle accent-circle-1"></div>
+  <div class="accent-circle accent-circle-2"></div>
   <header class="header animate-on-scroll">
+    <div class="accent-dot-grid">
+      {#each Array(16) as _, i}
+        <div class="dot"></div>
+      {/each}
+    </div>
+    
     {#if profilePhoto}
-      <img src={profilePhoto} alt="Patrick Furbert" class="profile-img" />
+      <img src={profilePhoto} alt="Patrick Furbert" class="profile-img floating" />
     {:else}
-      <div class="profile-initials">PF</div>
+      <div class="profile-initials floating">PF</div>
     {/if}
     <h1>Patrick Furbert</h1>
     <p>Software Engineer</p>
     
     <div class="contact-info">
-      <p>6 Crabtree Cir, Webster, NY 14580</p>
+
       <p><a href="tel:+15853487505">(585) 348-7505</a> | <a href="mailto:patrickmfurbert@gmail.com">patrickmfurbert@gmail.com</a></p>
     </div>
     
@@ -58,7 +66,7 @@
   <section id="summary" class="animate-on-scroll">
     <h2>Professional Summary</h2>
     <p>
-      Results-driven Software Engineer II with 3+ years of experience developing and deploying applications in OpenShift environments. 
+      Results-driven Software Engineer with 3+ years of experience developing and deploying applications in OpenShift environments. 
       Combines strong technical expertise in Java, Spring Boot, Python, and full-stack development with exceptional leadership and 
       problem-solving skills gained through healthcare management roles. Proven track record of mentoring teams, resolving complex 
       technical issues, and collaborating effectively with cross-functional stakeholders. Published author with a commitment to 
@@ -66,6 +74,8 @@
     </p>
   </section>
 
+  <div class="section-divider"></div>
+  
   <section id="experience" class="animate-on-scroll">
     <h2>Professional Experience</h2>
     
@@ -112,6 +122,8 @@
     </div>
   </section>
 
+  <div class="section-divider"></div>
+  
   <section id="education" class="animate-on-scroll">
     <h2>Education</h2>
     
@@ -141,6 +153,8 @@
     </div>
   </section>
 
+  <div class="section-divider"></div>
+  
   <section id="skills" class="animate-on-scroll">
     <h2>Technical Skills</h2>
     
@@ -148,56 +162,61 @@
       <div class="skills-category">
         <h3>Languages & Frameworks (Proficient)</h3>
         <div class="skills-list">
-          <span class="skill-tag">Java</span>
-          <span class="skill-tag">Spring Boot</span>
-          <span class="skill-tag">Gradle</span>
-          <span class="skill-tag">Python</span>
-          <span class="skill-tag">JavaScript</span>
-          <span class="skill-tag">HTML/CSS</span>
-          <span class="skill-tag">React</span>
-          <span class="skill-tag">Node.js</span>
-          <span class="skill-tag">SQL (Oracle)</span>
-          <span class="skill-tag">MongoDB</span>
-          <span class="skill-tag">Docker</span>
-          <span class="skill-tag">Gauge</span>
-          <span class="skill-tag">AssertjDB</span>
-          <span class="skill-tag">QueryDSL</span>
-          <span class="skill-tag">Dapr</span>
+          <span class="skill-tag primary-skill">Java</span>
+          <span class="skill-tag primary-skill">Spring Boot</span>
+          <span class="skill-tag primary-skill">Gradle</span>
+          <span class="skill-tag primary-skill">Python</span>
+          <span class="skill-tag primary-skill">JavaScript</span>
+          <span class="skill-tag primary-skill">HTML/CSS</span>
+          <span class="skill-tag primary-skill">React</span>
+          <span class="skill-tag primary-skill">Node.js</span>
+          <span class="skill-tag primary-skill">SQL (Oracle)</span>
+          <span class="skill-tag primary-skill">MongoDB</span>
+          <span class="skill-tag primary-skill">Docker</span>
+          <span class="skill-tag primary-skill">Gauge</span>
+          <span class="skill-tag primary-skill">AssertjDB</span>
+          <span class="skill-tag primary-skill">QueryDSL</span>
+          <span class="skill-tag primary-skill">Dapr</span>
         </div>
       </div>
       
       <div class="skills-category">
         <h3>Languages & Frameworks (Familiar)</h3>
         <div class="skills-list">
-          <span class="skill-tag">C</span>
-          <span class="skill-tag">C#</span>
-          <span class="skill-tag">Dart</span>
-          <span class="skill-tag">Flutter</span>
-          <span class="skill-tag">Rust</span>
+          <span class="skill-tag secondary-skill">C</span>
+          <span class="skill-tag secondary-skill">C#</span>
+          <span class="skill-tag secondary-skill">Dart</span>
+          <span class="skill-tag secondary-skill">Flutter</span>
+          <span class="skill-tag secondary-skill">Rust</span>
         </div>
       </div>
       
       <div class="skills-category">
         <h3>Technologies & Tools</h3>
         <div class="skills-list">
-          <span class="skill-tag">Agile</span>
-          <span class="skill-tag">CI/CD</span>
-          <span class="skill-tag">Jira</span>
-          <span class="skill-tag">Bitbucket/Git</span>
-          <span class="skill-tag">Jenkins</span>
-          <span class="skill-tag">Splunk</span>
-          <span class="skill-tag">REST APIs</span>
-          <span class="skill-tag">Postman</span>
-          <span class="skill-tag">OpenShift</span>
-          <span class="skill-tag">IntelliJ/VSCode</span>
-          <span class="skill-tag">Linux</span>
-          <span class="skill-tag">Kafka</span>
+          <span class="skill-tag tool-skill">Agile</span>
+          <span class="skill-tag tool-skill">CI/CD</span>
+          <span class="skill-tag tool-skill">Jira</span>
+          <span class="skill-tag tool-skill">Bitbucket/Git</span>
+          <span class="skill-tag tool-skill">Jenkins</span>
+          <span class="skill-tag tool-skill">Splunk</span>
+          <span class="skill-tag tool-skill">REST APIs</span>
+          <span class="skill-tag tool-skill">Postman</span>
+          <span class="skill-tag tool-skill">OpenShift</span>
+          <span class="skill-tag tool-skill">IntelliJ/VSCode</span>
+          <span class="skill-tag tool-skill">Linux</span>
+          <span class="skill-tag tool-skill">Kafka</span>
         </div>
       </div>
     </div>
   </section>
   
+  <div class="section-divider"></div>
+  
   <section id="community" class="animate-on-scroll">
+    <div class="tag-container">
+      <div class="corner-tag">2025</div>
+    </div>
     <h2>Community Service</h2>
     <div class="experience-item">
       <div class="job-title">
@@ -209,7 +228,12 @@
     </div>
   </section>
   
+  <div class="section-divider"></div>
+  
   <section id="publications" class="animate-on-scroll">
+    <div class="tag-container">
+      <div class="corner-tag">2008</div>
+    </div>
     <h2>Publications</h2>
     <p>
       Furbert, P., Lu, C., Winograd, N., & DeLouise, L. (2008). Label-free optical detection of peptide synthesis on a porous silicon scaffold/sensor. 
