@@ -1,6 +1,7 @@
 <script>
   import { onMount } from 'svelte';
-  import { setupSmoothScroll, setupScrollAnimations, setupThemeToggle } from '$lib/animations';
+  import { setupScrollAnimations, setupThemeToggle } from '$lib/animations';
+  import { setupNavbar } from '$lib/navbar';
 
   // Try to import your profile photo if it exists
   // Note: You'll need to manually add your profile photo to the assets folder
@@ -13,9 +14,12 @@
   }
   
   onMount(() => {
-    setupSmoothScroll();
+    // Setup animations and navbar
     setupScrollAnimations();
     setupThemeToggle();
+    
+    // Setup navbar with improved implementation
+    setupNavbar();
   });
 </script>
 

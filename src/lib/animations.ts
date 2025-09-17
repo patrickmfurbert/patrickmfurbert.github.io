@@ -2,6 +2,8 @@
 
 // Smooth scroll to section when clicking on navigation links
 export function setupSmoothScroll(): void {
+  if (typeof window === 'undefined') return;
+
   document.querySelectorAll('a[href^="#"]').forEach((anchor: Element) => {
     anchor.addEventListener('click', function(this: HTMLAnchorElement, e: Event) {
       e.preventDefault();
@@ -16,6 +18,43 @@ export function setupSmoothScroll(): void {
         }
       }
     });
+  });
+}
+
+// New function specifically for navbar hide/show behavior
+export function setupNavbarBehavior(): void {
+  if (typeof window === 'undefined') return;
+  
+  // Get the navbar element
+  const navbar = document.querySelector('.nav-container') as HTMLElement;
+  if (!navbar) {
+    return;
+  }
+  
+  // Track if navbar is hidden
+  let isHidden = false;
+  let lastScrollY = window.scrollY;
+  
+  // Add click handlers to navigation links
+  document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener('click', e => {
+      // Don't preventDefault here as we still want the smooth scroll to work
+      
+      // Hide the navbar
+      navbar.style.transform = 'translateY(-100%)';
+      isHidden = true;
+    });
+  });
+  
+  // Show navbar on scroll
+  window.addEventListener('scroll', () => {
+    // If navbar is hidden and user has scrolled, show it
+    if (isHidden && Math.abs(window.scrollY - lastScrollY) > 10) {
+      navbar.style.transform = 'translateY(0)';
+      isHidden = false;
+    }
+    
+    lastScrollY = window.scrollY;
   });
 }
 
