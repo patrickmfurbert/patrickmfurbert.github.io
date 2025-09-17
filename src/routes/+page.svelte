@@ -31,8 +31,7 @@
 </div>
 
 <div class="container fade-in">
-  <div class="accent-circle accent-circle-1"></div>
-  <div class="accent-circle accent-circle-2"></div>
+
   <header class="header animate-on-scroll">
     <div class="accent-dot-grid">
       {#each Array(16) as _, i}
