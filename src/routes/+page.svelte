@@ -48,7 +48,7 @@
     <p>Software Engineer</p>
     
     <div class="contact-info">
-      <p><a href="tel:+15853487505"><strong>(585) 348-7505</strong></a> | <a href="mailto:patrickmfurbert@gmail.com"><strong>patrickmfurbert@gmail.com</strong></a></p>
+      <p><a href="tel:+15853487505"><strong>(585) 348-7505</strong></a> </p> <p class="invisible-contact">|</p> <p><a href="mailto:patrickmfurbert@gmail.com"><strong>patrickmfurbert@gmail.com</strong></a></p>
     </div>
     
     <div class="social-links">
