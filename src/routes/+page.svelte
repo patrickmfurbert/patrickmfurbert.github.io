@@ -216,7 +216,7 @@
   <div class="section-divider"></div>
 
   <section id="skills" class="animate-on-scroll">
-    <h2>Technical Skills</h2>
+    <h2>Projects & Skills</h2>
 
     <div class="skills-container">
       <div class="skills-category">
@@ -229,6 +229,7 @@
           <span class="skill-tag primary-skill">JavaScript</span>
           <span class="skill-tag primary-skill">HTML/CSS</span>
           <span class="skill-tag primary-skill">React</span>
+          <span class="skill-tag primary-skill">Svelte</span>
           <span class="skill-tag primary-skill">Node.js</span>
           <span class="skill-tag primary-skill">SQL (Oracle)</span>
           <span class="skill-tag primary-skill">MongoDB</span>
@@ -266,6 +267,13 @@
           <span class="skill-tag tool-skill">IntelliJ/VSCode</span>
           <span class="skill-tag tool-skill">Linux</span>
           <span class="skill-tag tool-skill">Kafka</span>
+        </div>
+      </div>
+
+      <div class="skills-category">
+        <h3>Projects</h3>
+        <div class="skills-list">
+          <span class="skill-tag tool-skill"><a href="https://onthestack.io">onthestack.io - blog</a></span>
         </div>
       </div>
     </div>
