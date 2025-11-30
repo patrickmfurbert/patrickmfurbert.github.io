@@ -36,54 +36,54 @@
 </div>
 
 <div class="container fade-in">
-    <header id="contact" class="header animate-on-scroll">
-      <div class="accent-dot-grid">
-        {#each Array(16) as _, i}
-          <div class="dot"></div>
-        {/each}
-      </div>
+  <header id="contact" class="header animate-on-scroll">
+    <div class="accent-dot-grid">
+      {#each Array(16) as _, i}
+        <div class="dot"></div>
+      {/each}
+    </div>
 
-      {#if profilePhoto}
-        <img
-          src={profilePhoto}
-          alt="Patrick Furbert"
-          class="profile-img floating"
-        />
-      {:else}
-        <div class="profile-initials floating">PF</div>
-      {/if}
-      <h1>Patrick Furbert</h1>
-      <p>Software Engineer</p>
+    {#if profilePhoto}
+      <img
+        src={profilePhoto}
+        alt="Patrick Furbert"
+        class="profile-img floating"
+      />
+    {:else}
+      <div class="profile-initials floating">PF</div>
+    {/if}
+    <h1>Patrick Furbert</h1>
+    <p>Software Engineer</p>
 
-      <div class="contact-info">
-        <p><a href="tel:+15853487505"><strong>(585) 348-7505</strong></a></p>
-        <p class="invisible-contact">|</p>
-        <p>
-          <a href="mailto:patrickmfurbert@gmail.com"
-            ><strong>patrickmfurbert@gmail.com</strong></a
-          >
-        </p>
-      </div>
-
-      <div class="social-links">
-        <a
-          href="https://linkedin.com/in/furbert"
-          class="social-link"
-          target="_blank"
-          rel="noopener noreferrer"
+    <div class="contact-info">
+      <p><a href="tel:+15853487505"><strong>(585) 348-7505</strong></a></p>
+      <p class="invisible-contact">|</p>
+      <p>
+        <a href="mailto:patrickmfurbert@gmail.com"
+          ><strong>patrickmfurbert@gmail.com</strong></a
         >
-          LinkedIn
-        </a>
-        <a
-          href="https://github.com/patrickmfurbert"
-          class="social-link"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          GitHub
-        </a>
-      </div>
-    </header>
+      </p>
+    </div>
+
+    <div class="social-links">
+      <a
+        href="https://linkedin.com/in/furbert"
+        class="social-link"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        LinkedIn
+      </a>
+      <a
+        href="https://github.com/patrickmfurbert"
+        class="social-link"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        GitHub
+      </a>
+    </div>
+  </header>
 
   <section id="summary" class="animate-on-scroll">
     <h2>Professional Summary</h2>
@@ -273,7 +273,12 @@
       <div class="skills-category">
         <h3>Projects</h3>
         <div class="skills-list">
-          <span class="skill-tag tool-skill"><a href="https://onthestack.io">onthestack.io - blog</a></span>
+          <span class="skill-tag tool-skill"
+            ><a href="https://onthestack.io">onthestack.io - blog</a></span
+          >
+          <span class="skill-tag tool-skill"
+            ><a href="https://www.diceversagames.com/">diceversagames.com</a></span
+          >
         </div>
       </div>
     </div>
