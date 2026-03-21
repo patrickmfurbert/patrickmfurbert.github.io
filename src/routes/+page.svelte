@@ -88,7 +88,7 @@
   <section id="summary" class="animate-on-scroll">
     <h2>Professional Summary</h2>
     <p>
-      Results-driven Software Engineer with 3+ years of experience developing
+      Results-driven Software Engineer with 4+ years of experience developing
       and deploying applications in OpenShift environments. Combines strong
       technical expertise in Java, Spring Boot, Python, and full-stack
       development with exceptional leadership and problem-solving skills gained
@@ -279,6 +279,9 @@
           <span class="skill-tag tool-skill"
             ><a href="https://www.diceversagames.com/">diceversagames.com</a></span
           >
+          <span class="skill-tag tool-skill"
+            ><a href="https://github.com/patrickmfurbert/mcps">Python MCP Servers</a></span
+          >
         </div>
       </div>
     </div>
@@ -288,6 +291,14 @@
 
   <section id="community" class="animate-on-scroll">
     <h2>Community Service</h2>
+    <div class="experience-item">
+      <div class="job-title">
+        <span>First Robotics Mentor</span>
+        <span>2026</span>
+      </div>
+      <div class="company">Hilton High School - Hilton, NY</div>
+      <p>Java Programming Mentor for Robotic Cadets Club</p>
+    </div>
     <div class="experience-item">
       <div class="job-title">
         <span>First Robotics Mentor</span>
